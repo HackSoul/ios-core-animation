@@ -9,10 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    lazy var expandButton: UIButton = {
+        let button = UIButton()
+        button.backgroundColor = UIColor.orange
+        button.setTitle("显示", for: .normal)
+        button.setTitleColor(UIColor.white, for: .normal)
+        return button
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = UIColor.white
+        
+        
     }
 
 
